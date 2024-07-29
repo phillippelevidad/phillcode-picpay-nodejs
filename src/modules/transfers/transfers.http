@@ -1,0 +1,9 @@
+### register
+POST http://localhost:3000/transfers
+Content-Type: application/json
+
+{
+    "payer": 1,
+    "payee": 2,
+    "value": 1000
+}
