@@ -1,0 +1,7 @@
+### add credit
+PUT http://localhost:3000/wallets/1/credit
+Content-Type: application/json
+
+{
+    "amount": 1000
+}
