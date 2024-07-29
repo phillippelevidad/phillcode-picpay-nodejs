@@ -1,0 +1,11 @@
+### register
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fullName": "Phill Code",
+    "cpfCnpj": "012.345.678-95",
+    "email": "phillcode5@mailinator.com",
+    "password": "123123",
+    "type": "payee"
+}
