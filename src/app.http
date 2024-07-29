@@ -1,0 +1,44 @@
+### 0) remove database.json file
+
+### 1) register payer
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fullName": "Payer",
+    "cpfCnpj": "000.000.000-01",
+    "email": "payer@mailinator.com",
+    "password": "123123",
+    "type": "payer"
+}
+
+### 2) register payee
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fullName": "Payee",
+    "cpfCnpj": "000.000.000-02",
+    "email": "payee@mailinator.com",
+    "password": "123123",
+    "type": "payee"
+}
+
+
+### 3) add credit
+PUT http://localhost:3000/wallets/1/credit
+Content-Type: application/json
+
+{
+    "amount": 1000
+}
+
+### 4) do transfer
+POST http://localhost:3000/transfers
+Content-Type: application/json
+
+{
+    "payer": 1,
+    "payee": 2,
+    "value": 350
+}
