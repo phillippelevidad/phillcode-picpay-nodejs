@@ -1,0 +1,8 @@
+###
+POST https://util.devi.tools/api/v1/notify
+Content-Type: application/json
+
+{
+    "to": "teste@gmail.com",
+    "message": "test"
+}
